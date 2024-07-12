@@ -6,10 +6,10 @@ import styled from "styled-components";
 import { SearchBar } from "./SearchBar";
 
 const Menu = styled(StretchableFlexContainer).attrs(() => ({
-  as: PaddingWrapper,
-  padding: ["l", "xl"],
   gap: "m",
   stretch: 1,
+  switchAt: "600px",
+  justify: "center",
 }))`
   background-color: #19141e;
   color: white;
@@ -25,19 +25,23 @@ const MenuItem = styled(PaddingWrapper).attrs(() => ({
 
 const Header = () => {
   return (
-    <Menu>
-      <div>logo</div>
-      <nav>
-        <InlineFlexContainer as="ul" gap="m" justify="flex-start" wrap="wrap">
-          <MenuItem active>About</MenuItem>
-          <MenuItem>Gallery</MenuItem>
-          <MenuItem>Events</MenuItem>
-          <MenuItem>Contact</MenuItem>
-        </InlineFlexContainer>
-      </nav>
-      <SearchBar placeholder="Search" />
-      <button>Sign In</button>
-    </Menu>
+    <MenuWrapper>
+      <Menu>
+        <div>logo</div>
+        <nav>
+          <MenuItemsContainer>
+            <MenuItem active>About</MenuItem>
+            <MenuItem>Gallery</MenuItem>
+            <MenuItem>Events</MenuItem>
+            <MenuItem>Contact</MenuItem>
+          </MenuItemsContainer>
+        </nav>
+        <StretchableFlexContainer>
+          <SearchBar placeholder="Search" />
+          <button>Sign In</button>
+        </StretchableFlexContainer>
+      </Menu>
+    </MenuWrapper>
   );
 };
 
