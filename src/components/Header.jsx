@@ -5,6 +5,12 @@ import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import styled from "styled-components";
 import { SearchBar } from "./SearchBar";
 
+export const MenuWrapper = styled(PaddingWrapper).attrs(() => ({
+  padding: ["m", "xl"],
+}))`
+  background-color: #19141e;
+`;
+
 const Menu = styled(StretchableFlexContainer).attrs(() => ({
   gap: "m",
   stretch: 1,
