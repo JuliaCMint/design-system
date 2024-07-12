@@ -1,7 +1,8 @@
-import {spaceSchema} from "../common/spaces"
+import styled from "styled-components"
+import {spacingSchema} from "../common/spaces"
 
 export const InlineFlexContainer = styled.div`
-    --gap: ${(props)=>spaceSchema[props.gap] ?? spaceSchema.m};
+    --gap: ${(props)=>spacingSchema[props.gap] ?? spacingSchema.m};
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap);
