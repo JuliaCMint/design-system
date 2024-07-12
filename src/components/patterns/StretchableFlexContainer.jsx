@@ -1,4 +1,17 @@
+import styled, { css } from "styled-components";
 import { InlineFlexContainer } from "./InlineFlexContainer";
+
+const responsive = css`
+  --switchAt: ${({ switchAt }) =>
+    typeof switchAt === "string" ? switchAt : `${switchAt}px`};
+
+  flex-wrap: wrap;
+
+  & > * {
+    min-width: fit-content;
+    flex-basis: calc((var(--switchAt) - (100% - var(--gutter))) * 999);
+  }
+`;
 
 const stretchMap = {
     all: `> *  { flex: 1 }`,
