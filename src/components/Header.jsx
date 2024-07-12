@@ -14,20 +14,28 @@ const Menu = styled(StretchableFlexContainer).attrs(() => ({
   color: white;
 `;
 
+const MenuItem = styled(PaddingWrapper).attrs(() => ({
+  as: "li",
+  padding: ["m", "l"],
+}))`
+  background-color: ${(props) => (props.active ? "#904C77" : "transparent")};
+  list-style-type: none;
+`;
+
 const Header = () => {
   return (
     <Menu>
       <div>logo</div>
-      <InlineFlexContainer gap="m" justify="center" align="center">
-        <span>About</span>
-        <span>Gallery</span>
-        <span>Events</span>
-        <span>Contact</span>
-      </InlineFlexContainer>
-      <StretchableFlexContainer gap="m" align="center" justify="end">
-        <span>Info</span>
-        <button>Sign In</button>
-      </StretchableFlexContainer>
+      <nav>
+        <InlineFlexContainer as="ul" gap="m" justify="flex-start" wrap="wrap">
+          <MenuItem active>About</MenuItem>
+          <MenuItem>Gallery</MenuItem>
+          <MenuItem>Events</MenuItem>
+          <MenuItem>Contact</MenuItem>
+        </InlineFlexContainer>
+      </nav>
+      <span>Info</span>
+      <button>Sign In</button>
     </Menu>
   );
 };
