@@ -21,6 +21,13 @@ const Menu = styled(StretchableFlexContainer).attrs(() => ({
   color: white;
 `;
 
+const MenuItemsContainer = styled(InlineFlexContainer).attrs(() => ({
+  as: "ul",
+  justify: "flex-start",
+}))`
+  padding-inline-start: 0;
+`;
+
 const MenuItem = styled(PaddingWrapper).attrs(() => ({
   as: "li",
   padding: ["m", "l"],
