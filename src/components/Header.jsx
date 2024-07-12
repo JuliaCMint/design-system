@@ -3,6 +3,7 @@ import { StretchableFlexContainer } from "./patterns/StretchableFlexContainer";
 import { InlineFlexContainer } from "./patterns/InlineFlexContainer";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import styled from "styled-components";
+import { SearchBar } from "./SearchBar";
 
 const Menu = styled(StretchableFlexContainer).attrs(() => ({
   as: PaddingWrapper,
@@ -34,7 +35,7 @@ const Header = () => {
           <MenuItem>Contact</MenuItem>
         </InlineFlexContainer>
       </nav>
-      <span>Info</span>
+      <SearchBar placeholder="Search" />
       <button>Sign In</button>
     </Menu>
   );
