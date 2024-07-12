@@ -1,7 +1,9 @@
+import MainPage from "./pages/MainPage";
+
 const App = () => {
   return (
     <>
-      <h3>Hello</h3>
+      <MainPage />
     </>
   );
 };
