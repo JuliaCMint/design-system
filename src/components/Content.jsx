@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import { Split } from "./patterns/Split";
+import { CenterAlignedContainer } from "./patterns/CenterAlignedContainer";
 
 const ContentArea = styled(PaddingWrapper).attrs(() => ({
   padding: ["l", "xl"],
@@ -12,11 +13,13 @@ const ContentArea = styled(PaddingWrapper).attrs(() => ({
 const Content = () => {
   return (
     <ContentArea>
-      <h2>Settings</h2>
-      <Split>
-        <div>left</div>
-        <div>right</div>
-      </Split>
+      <CenterAlignedContainer maxWidth="77rem">
+        <h2>Settings</h2>
+        <Split>
+          <div>left</div>
+          <div>right</div>
+        </Split>
+      </CenterAlignedContainer>
     </ContentArea>
   );
 };
