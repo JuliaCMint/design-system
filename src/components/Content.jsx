@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
+import { Split } from "./patterns/Split";
 
 const ContentArea = styled(PaddingWrapper).attrs(() => ({
   padding: ["l", "xl"],
@@ -9,7 +10,15 @@ const ContentArea = styled(PaddingWrapper).attrs(() => ({
 `;
 
 const Content = () => {
-  return <ContentArea>Content</ContentArea>;
+  return (
+    <ContentArea>
+      <h2>Settings</h2>
+      <Split>
+        <div>left</div>
+        <div>right</div>
+      </Split>
+    </ContentArea>
+  );
 };
 
 export default Content;
