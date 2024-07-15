@@ -26,6 +26,8 @@ const MenuItemsContainer = styled(InlineFlexContainer).attrs(() => ({
   justify: "flex-start",
 }))`
   padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 `;
 
 const MenuItem = styled(PaddingWrapper).attrs(() => ({
