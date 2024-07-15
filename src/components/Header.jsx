@@ -12,6 +12,7 @@ export const MenuWrapper = styled(PaddingWrapper).attrs(() => ({
   padding: ["m", "xl"],
 }))`
   background-color: #19141e;
+  border-block-end: 0.1px solid #ffffff4b;
 `;
 
 const Menu = styled(StretchableFlexContainer).attrs(() => ({
