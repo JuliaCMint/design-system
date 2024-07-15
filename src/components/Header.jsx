@@ -4,6 +4,8 @@ import { InlineFlexContainer } from "./patterns/InlineFlexContainer";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import styled from "styled-components";
 import { SearchBar } from "./SearchBar";
+import { Logo } from "./Logo";
+import logoImg from "../images/girl.png";
 
 export const MenuWrapper = styled(PaddingWrapper).attrs(() => ({
   padding: ["m", "xl"],
@@ -42,7 +44,7 @@ const Header = () => {
   return (
     <MenuWrapper>
       <Menu>
-        <div>logo</div>
+        <Logo image={logoImg} />
         <nav>
           <MenuItemsContainer>
             <MenuItem active>About</MenuItem>
