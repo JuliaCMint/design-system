@@ -14,6 +14,14 @@ const ContentHeader = styled.header`
   color: #fff;
 `;
 
+const ContentPane = styled(Split).attrs(() => ({
+  gutter: "none",
+  fraction: "1/4",
+}))`
+  background: white;
+  border-radius: 0.25rem;
+`;
+
 const Content = () => {
   return (
     <ContentArea>
@@ -21,10 +29,10 @@ const Content = () => {
         <ContentHeader>
           <h2>Settings</h2>
         </ContentHeader>
-        <Split>
+        <ContentPane>
           <div>left</div>
           <div>right</div>
-        </Split>
+        </ContentPane>
       </CenterAlignedContainer>
     </ContentArea>
   );
