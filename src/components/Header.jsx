@@ -38,6 +38,7 @@ const MenuItem = styled(PaddingWrapper).attrs(() => ({
 }))`
   background-color: ${(props) => (props.active ? "#904C77" : "transparent")};
   list-style-type: none;
+  border-radius: ${(props) => props.borderRadius ?? "0.25rem"};
 `;
 
 const Header = () => {

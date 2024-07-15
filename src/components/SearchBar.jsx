@@ -7,4 +7,5 @@ export const SearchBar = styled(PaddingWrapper).attrs(() => ({
 }))`
   background-color: rgba(144, 76, 119, 0.4);
   border: none;
+  border-radius: ${(props) => props.borderRadius ?? "0.25rem"};
 `;
