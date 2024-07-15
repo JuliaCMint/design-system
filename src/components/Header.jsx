@@ -6,6 +6,7 @@ import styled from "styled-components";
 import { SearchBar } from "./SearchBar";
 import { Logo } from "./Logo";
 import logoImg from "../images/girl.png";
+import { Button } from "./Button";
 
 export const MenuWrapper = styled(PaddingWrapper).attrs(() => ({
   padding: ["m", "xl"],
@@ -56,7 +57,7 @@ const Header = () => {
         </nav>
         <StretchableFlexContainer>
           <SearchBar placeholder="Search" />
-          <button>Sign In</button>
+          <Button>Sign In</Button>
         </StretchableFlexContainer>
       </Menu>
     </MenuWrapper>
