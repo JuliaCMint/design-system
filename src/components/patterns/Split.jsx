@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { spacingSchema } from "../common/spaces";
 
 const fractions = {
