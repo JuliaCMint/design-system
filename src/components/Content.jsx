@@ -10,11 +10,17 @@ const ContentArea = styled(PaddingWrapper).attrs(() => ({
   background-image: linear-gradient(to bottom, #19141e 10rem, #fff 10rem);
 `;
 
+const ContentHeader = styled.header`
+  color: #fff;
+`;
+
 const Content = () => {
   return (
     <ContentArea>
       <CenterAlignedContainer maxWidth="77rem">
-        <h2>Settings</h2>
+        <ContentHeader>
+          <h2>Settings</h2>
+        </ContentHeader>
         <Split>
           <div>left</div>
           <div>right</div>
