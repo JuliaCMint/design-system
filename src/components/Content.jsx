@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import { Split } from "./patterns/Split";
 import { CenterAlignedContainer } from "./patterns/CenterAlignedContainer";
+import SideBar from "./Sidebar";
 
 const ContentArea = styled(PaddingWrapper).attrs(() => ({
   padding: ["l", "xl"],
@@ -30,7 +31,7 @@ const Content = () => {
           <h2>Settings</h2>
         </ContentHeader>
         <ContentPane>
-          <div>left</div>
+          <SideBar />
           <div>right</div>
         </ContentPane>
       </CenterAlignedContainer>
