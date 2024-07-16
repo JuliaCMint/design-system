@@ -4,7 +4,7 @@ import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import { Logo } from "./Logo";
 import { InlineFlexContainer } from "./patterns/InlineFlexContainer";
 
-const SideBar = () => {
+const SideBar = ({ selectedMenuItem, setSelectedMenuItem }) => {
   const SideMenu = styled(GridLayers).attrs(() => ({
     as: "ul",
     gap: "xs",
@@ -34,13 +34,31 @@ const SideBar = () => {
   return (
     <PaddingWrapper padding={["l", "none"]}>
       <SideMenu>
-        <SideMenuItem active>
+        <SideMenuItem
+          active={selectedMenuItem === "General"}
+          onClick={() => setSelectedMenuItem("General")}
+        >
           <Logo square size="1rem" />
           General
         </SideMenuItem>
-        <SideMenuItem>Services</SideMenuItem>
-        <SideMenuItem>Membership</SideMenuItem>
-        <SideMenuItem>Notifications</SideMenuItem>
+        <SideMenuItem
+          active={selectedMenuItem === "Services"}
+          onClick={() => setSelectedMenuItem("Services")}
+        >
+          Services
+        </SideMenuItem>
+        <SideMenuItem
+          active={selectedMenuItem === "Membership"}
+          onClick={() => setSelectedMenuItem("Membership")}
+        >
+          Membership
+        </SideMenuItem>
+        <SideMenuItem
+          active={selectedMenuItem === "Notifications"}
+          onClick={() => setSelectedMenuItem("Notifications")}
+        >
+          Notifications
+        </SideMenuItem>
       </SideMenu>
     </PaddingWrapper>
   );

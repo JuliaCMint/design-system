@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { PaddingWrapper } from "./patterns/PaddingWrapper";
 import { Split } from "./patterns/Split";
@@ -25,6 +25,8 @@ const ContentPane = styled(Split).attrs(() => ({
 `;
 
 const Content = () => {
+  const [selectedMenuItem, setSelectedMenuItem] = useState("General");
+
   return (
     <ContentArea>
       <CenterAlignedContainer maxWidth="77rem">
@@ -32,8 +34,11 @@ const Content = () => {
           <h2>Settings</h2>
         </ContentHeader>
         <ContentPane>
-          <SideBar />
-          <MainContent />
+          <SideBar
+            selectedMenuItem={selectedMenuItem}
+            setSelectedMenuItem={setSelectedMenuItem}
+          />
+          <MainContent selectedMenuItem={selectedMenuItem} />
         </ContentPane>
       </CenterAlignedContainer>
     </ContentArea>
