@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import GeneralContent from "./GeneralContent";
 
 const MainContent = ({ selectedMenuItem }) => {
   const renderContent = () => {
     switch (selectedMenuItem) {
       case "General":
-        return <p>This is the general content</p>;
+        return <GeneralContent />;
       case "Services":
         return <p>This is the services content</p>;
       case "Membership":
