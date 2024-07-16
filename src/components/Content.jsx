@@ -9,7 +9,7 @@ import MainContent from "./MainContent";
 const ContentArea = styled(PaddingWrapper).attrs(() => ({
   padding: ["l", "xl"],
 }))`
-  background-image: linear-gradient(to bottom, #19141e 10rem, #fff 10rem);
+  background-image: linear-gradient(to bottom, #19141e 10rem, #d7cdcc 10rem);
 `;
 
 const ContentHeader = styled.header`
