@@ -26,6 +26,9 @@ const SideBar = () => {
         border-inline-start-color: #19141e;
         background: #904c7766;
       `}
+    &:hover {
+      background: #904c7766;
+    }
   `;
 
   return (
