@@ -24,7 +24,7 @@ const GeneralContent = () => {
             <input type="email" />
           </LabeledInput>
         </GridLayers>
-        <Logo image={logoImg} size="10rem" />
+        <Logo image={logoImg} size="10rem" border="1px solid #19141e" />
       </Split>
     </GridLayers>
   );

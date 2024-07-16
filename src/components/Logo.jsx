@@ -7,4 +7,5 @@ export const Logo = styled.div`
   width: var(--size);
   height: var(--size);
   ${(props) => !props.square && "border-radius: 50%;"}
+  border: ${(props) => props.border ?? "none"}
 `;
