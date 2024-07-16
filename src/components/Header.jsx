@@ -41,6 +41,9 @@ const MenuItem = styled(PaddingWrapper).attrs(() => ({
   background-color: ${(props) => (props.active ? "#904c7766" : "transparent")};
   list-style-type: none;
   border-radius: ${(props) => props.borderRadius ?? "0.25rem"};
+  &:hover {
+    background-color: #904c7766;
+  }
 `;
 
 const Header = () => {
