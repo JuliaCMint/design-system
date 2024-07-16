@@ -1,14 +1,14 @@
-import React from 'react'
-import Header from '../components/Header'
-import Content from '../components/Content'
+import React from "react";
+import Header from "../components/Header";
+import Content from "../components/Content";
 
 const MainPage = () => {
   return (
     <div>
-        <Header />
-        <Content/>
+      <Header />
+      <Content />
     </div>
-  )
-}
+  );
+};
 
-export default MainPage
+export default MainPage;
