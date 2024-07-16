@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 const MainContent = ({ selectedMenuItem }) => {
   const renderContent = () => {
     switch (selectedMenuItem) {
@@ -14,11 +16,19 @@ const MainContent = ({ selectedMenuItem }) => {
     }
   };
 
+  const ContentBox = styled.div`
+    border-inline-start: 1px solid #d7cdcc;
+
+    > * + * {
+      border-block-start: 1px solid #d7cdcc;
+    }
+  `;
+
   return (
-    <div>
+    <ContentBox>
       <h1>{selectedMenuItem}</h1>
       {renderContent()}
-    </div>
+    </ContentBox>
   );
 };
 
