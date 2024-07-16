@@ -17,7 +17,7 @@ const ContentHeader = styled.header`
 `;
 
 const ContentPane = styled(Split).attrs(() => ({
-  gutter: "none",
+  gap: "none",
   fraction: "1/4",
 }))`
   background: white;
