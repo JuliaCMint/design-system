@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import GeneralContent from "./GeneralContent";
+import { CenterAlignedContainer } from "./patterns/CenterAlignedContainer";
+import { GridLayers } from "./patterns/GridLayers";
+import { PaddingWrapper } from "./patterns/PaddingWrapper";
 
 const MainContent = ({ selectedMenuItem }) => {
   const renderContent = () => {
@@ -27,8 +30,10 @@ const MainContent = ({ selectedMenuItem }) => {
 
   return (
     <ContentBox>
-      <h1>{selectedMenuItem}</h1>
-      {renderContent()}
+      <PaddingWrapper padding={["m", "l"]}>
+        <h1>{selectedMenuItem}</h1>
+        {renderContent()}
+      </PaddingWrapper>
     </ContentBox>
   );
 };
