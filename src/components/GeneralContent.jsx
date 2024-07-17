@@ -17,7 +17,7 @@ const GeneralContent = () => {
 
   const Input = styled.input`
     border-radius: 0.25rem;
-    border: 1px solid #19141e;
+    border: 1px solid #d7cdcc;
     color: #303030;
     height: 30px;
   `;
@@ -33,7 +33,7 @@ const GeneralContent = () => {
             <Input as="textarea" />
           </LabeledInput>
         </GridLayers>
-        <Logo image={logoImg} size="10rem" border="1px solid #19141e" />
+        <Logo image={logoImg} size="10rem" border="1px solid #d7cdcc" />
       </Split>
 
       <GridColumns gap="l" columns={2}>
