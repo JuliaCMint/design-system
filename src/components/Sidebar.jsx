@@ -38,25 +38,28 @@ const SideBar = ({ selectedMenuItem, setSelectedMenuItem }) => {
           active={selectedMenuItem === "General"}
           onClick={() => setSelectedMenuItem("General")}
         >
-          <Logo square size="1rem" />
+          <Logo square size="0.5rem" />
           General
         </SideMenuItem>
         <SideMenuItem
           active={selectedMenuItem === "Services"}
           onClick={() => setSelectedMenuItem("Services")}
         >
+          <Logo round size="0.5rem" />
           Services
         </SideMenuItem>
         <SideMenuItem
           active={selectedMenuItem === "Membership"}
           onClick={() => setSelectedMenuItem("Membership")}
         >
+          <Logo round size="0.5rem" />
           Membership
         </SideMenuItem>
         <SideMenuItem
           active={selectedMenuItem === "Notifications"}
           onClick={() => setSelectedMenuItem("Notifications")}
         >
+          <Logo round size="0.5rem" />
           Notifications
         </SideMenuItem>
       </SideMenu>
