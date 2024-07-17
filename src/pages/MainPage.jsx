@@ -1,13 +1,21 @@
 import React from "react";
+import styled from "styled-components";
 import Header from "../components/Header";
 import Content from "../components/Content";
 
+const MainPageContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
 const MainPage = () => {
   return (
-    <div>
+    <MainPageContainer>
       <Header />
       <Content />
-    </div>
+    </MainPageContainer>
   );
 };
 
