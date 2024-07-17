@@ -16,4 +16,8 @@ export const Split = styled.div`
   gap: ${(props) => spacingSchema[props.gap] ?? spacingSchema.m};
   grid-template-columns: ${({ fraction }) =>
     fractions[fraction] ?? fractions["1/2"]};
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
