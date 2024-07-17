@@ -29,7 +29,7 @@ const GeneralContent = () => {
 
   return (
     <GridLayers>
-      <Split gap="l" fraction="auto-end">
+      <Split gap="l" fraction="auto-end" responsive>
         <GridLayers>
           <LabeledInput label="Username">
             <Input />

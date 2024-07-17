@@ -18,6 +18,6 @@ export const Split = styled.div`
     fractions[fraction] ?? fractions["1/2"]};
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: ${(props) => props.responsive && "1fr"};
   }
 `;
