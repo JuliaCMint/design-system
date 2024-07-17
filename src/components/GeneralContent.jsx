@@ -22,6 +22,11 @@ const GeneralContent = () => {
     height: 30px;
   `;
 
+  const SubLabel = styled.span`
+    color: #605d5c;
+    font-size: 0.75rem;
+  `;
+
   return (
     <GridLayers>
       <Split gap="l" fraction="auto-end">
@@ -31,6 +36,7 @@ const GeneralContent = () => {
           </LabeledInput>
           <LabeledInput label="About">
             <Input as="textarea" />
+            <SubLabel>Write a few lines about yourself</SubLabel>
           </LabeledInput>
         </GridLayers>
         <Logo image={logoImg} size="10rem" border="1px solid #d7cdcc" />
