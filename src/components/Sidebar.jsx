@@ -28,6 +28,10 @@ const SideBar = ({ selectedMenuItem, setSelectedMenuItem }) => {
     &:hover {
       background: #904c7766;
     }
+
+    @media (max-width: 768px) {
+      font-size: 0.5rem;
+    }
   `;
 
   return (
