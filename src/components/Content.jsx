@@ -23,6 +23,10 @@ const ContentPane = styled(Split).attrs(() => ({
 }))`
   background: white;
   border-radius: 0.25rem;
+
+  @media (max-width: 768px) {
+    fraction: "1/2";
+  }
 `;
 
 const Content = () => {
