@@ -30,7 +30,7 @@ const MainContent = ({ selectedMenuItem }) => {
 
   return (
     <ContentBox>
-      <PaddingWrapper padding={["m", "l"]}>
+      <PaddingWrapper padding={["m", "l", "xl"]}>
         <h1>{selectedMenuItem}</h1>
         {renderContent()}
       </PaddingWrapper>
