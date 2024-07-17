@@ -10,6 +10,7 @@ const ContentArea = styled(PaddingWrapper).attrs(() => ({
   padding: ["l", "xl"],
 }))`
   background-image: linear-gradient(to bottom, #19141e 10rem, #d7cdcc);
+  flex: 1;
 `;
 
 const ContentHeader = styled.header`
