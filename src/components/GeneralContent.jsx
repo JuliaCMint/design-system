@@ -4,6 +4,7 @@ import { Split } from "./patterns/Split";
 import logoImg from "../images/girl.png";
 import { GridColumns } from "./patterns/GridColumns";
 import styled from "styled-components";
+import FormButtons from "./Buttons";
 
 const GeneralContent = () => {
   const LabeledInput = ({ label, children }) => {
@@ -56,6 +57,8 @@ const GeneralContent = () => {
           <Input />
         </LabeledInput>
       </GridColumns>
+
+      <FormButtons />
     </GridLayers>
   );
 };
