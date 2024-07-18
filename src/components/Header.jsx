@@ -61,7 +61,7 @@ const Header = () => {
         </nav>
         <StretchableFlexContainer>
           <SearchBar placeholder="Search" />
-          <Button>Sign In</Button>
+          <Button primary>Sign In</Button>
         </StretchableFlexContainer>
       </Menu>
     </MenuWrapper>
